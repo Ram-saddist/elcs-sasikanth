@@ -1,0 +1,89 @@
+/* Page container (creates a stacking context above the fixed layers) */
+.home-page {
+  position: relative;
+  min-height: 100vh;
+  
+}
+
+/* Fixed background image that covers the entire page (all screens) */
+.home-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1; /* lowest layer */
+  background-image: url('/images/about-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* HERO */
+.home-hero {
+  position: relative;
+  /* This defines the "specific height" where particles appear.
+     Change to 80vh, 60vh or a fixed px value as needed. */
+  height: 80vh;
+  min-height: 560px;
+  padding: 120px 20px 60px;
+  color: #fff;
+  overflow: hidden; /* ensures particle canvas stays inside hero */
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  position: relative; /* above particles */
+  z-index: 2;
+}
+
+.home-hero h1 {
+  margin: 0 0 8px 0;
+  font-size: clamp(32px, 6vw, 64px);
+  line-height: 1.1;
+  font-weight: 800;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+}
+
+.hero-sub {
+  margin: 0;
+  font-size: 18px;
+  opacity: 0.95;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+/* Particles wrapper sized to hero only */
+.particles-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: -1; /* sits above background but under the hero content */
+  pointer-events: none; /* let clicks pass to hero content */
+}
+
+/* The particles canvas will be inserted by the lib and should fill the wrapper */
+.home-particles {
+  position: absolute !important;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Foreground content sections */
+.home-section {
+  padding: 60px 20px 100px;
+  color: #fff;
+  
+  margin: 0 auto;
+}
+#care img{
+  max-width: 1500px; 
+  width: 100%
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px){
+  .home-hero {
+    padding-top: calc(var(--nav-height, 64px) + 24px);
+  }
+  .hero-content { padding: 0 12px; }
+}

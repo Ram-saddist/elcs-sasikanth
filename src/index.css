@@ -1,0 +1,29 @@
+html, body, #root {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; /* allow scrolling (was hidden previously) */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Utility if you use a top fixed nav */
+.after-nav {
+  padding-top: calc(var(--nav-height) + 16px);
+}
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  flex: 1; /* pushes footer to bottom */
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (max-width: 900px){
+  .after-nav { padding-top: calc(var(--nav-height) + 12px); }
+}
