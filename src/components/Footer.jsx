@@ -20,9 +20,10 @@ export default function Footer() {
     try {
 
       const res = await axios.post(
-        "http://localhost:5000/api/contact/send-enquiry",
+        "https://sasikanth-elcs.onrender.com/api/contact/send-enquiry",
         formData
       );
+      //https://sasikanth-elcs.onrender.com http://localhost:5000
 
       alert(res.data.msg);
 

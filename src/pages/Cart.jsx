@@ -15,7 +15,8 @@ import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import axios from "axios";
 import "./Cart.css";
-const SERVER_URL = "http://localhost:5000";
+//https://sasikanth-elcs.onrender.com http://localhost:5000
+const SERVER_URL = "https://sasikanth-elcs.onrender.com";
 export default function Cart() {
   const [cartItems, setCartItems] = useState([]);
   const [loading, setLoading] = useState(false);
