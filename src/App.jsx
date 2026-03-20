@@ -7,6 +7,7 @@ import Profile from './pages/Profile';
 import Register from './pages/Register';
 import AdminAddProduct from './pages/AdminAddProduct';
 import Cart from './pages/Cart';
+import ITTalk from './pages/ITTalk';
 import Footer from './components/Footer'
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/admin/add-product" element={<AdminAddProduct />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/ittalk" element={<ITTalk />} />
           </Routes>
         </div>
         <Footer />

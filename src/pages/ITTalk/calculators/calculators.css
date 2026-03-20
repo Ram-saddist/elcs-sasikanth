@@ -1,0 +1,739 @@
+/* ========== Shared Calculator Box Styles ========== */
+
+.calculator-box {
+  background: linear-gradient(180deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.05) 100%);
+  border-radius: 20px;
+  padding: 45px;
+  border: 1px solid rgba(102, 126, 234, 0.25);
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.calculator-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #667eea 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% { background-position: 0% 0; }
+  50% { background-position: 100% 0; }
+}
+
+.calculator-box h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 25px;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgba(102, 126, 234, 0.5);
+}
+
+/* ========== Voltage Divider Calculator ========== */
+
+.voltage-calculator {
+  background: linear-gradient(180deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.05) 100%);
+  border-radius: 20px;
+  padding: 45px;
+  border: 1px solid rgba(102, 126, 234, 0.25);
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.voltage-calculator::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #667eea 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+.voltage-calculator h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 25px;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgba(102, 126, 234, 0.5);
+}
+
+.calculator-diagram-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.calculator-diagram { display: flex; justify-content: center; flex-shrink: 0; }
+
+.circuit-img {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  object-fit: contain;
+}
+
+.circuit-points { flex: 1; min-width: 250px; max-width: 400px; }
+.circuit-points ul { list-style: none; padding: 0; margin: 0; }
+
+.circuit-points li {
+  color: #c0c0c0;
+  padding: 10px 0;
+  padding-left: 25px;
+  position: relative;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.circuit-points li:last-child { border-bottom: none; }
+
+.circuit-points li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.formula-example {
+  background: linear-gradient(135deg, rgba(118, 75, 162, 0.15) 0%, rgba(102, 126, 234, 0.15) 100%);
+  border: 1px solid rgba(118, 75, 162, 0.3);
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+}
+
+.formula-example > strong {
+  display: block;
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.example-values { display: flex; gap: 30px; flex-wrap: wrap; margin-bottom: 15px; }
+.example-values p { color: #b8b8b8; margin: 0; font-size: 1rem; font-family: monospace; }
+
+.example-calculation {
+  background: rgba(102, 126, 234, 0.15);
+  padding: 15px 20px;
+  border-radius: 8px;
+  border-left: 3px solid #667eea;
+}
+
+.example-calculation p {
+  color: #fff;
+  margin: 0;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.calc-fraction { display: inline-flex; flex-direction: column; align-items: center; vertical-align: middle; margin: 0 5px; }
+.calc-numerator { border-bottom: 2px solid #667eea; padding-bottom: 3px; font-size: 0.95rem; color: #c0c0c0; }
+.calc-denominator { padding-top: 3px; font-size: 0.95rem; color: #c0c0c0; }
+
+.solve-for-section { margin-bottom: 25px; }
+.solve-for-section > label { display: block; color: #c0c0c0; margin-bottom: 10px; font-size: 0.95rem; }
+.solve-options { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.solve-btn {
+  flex: 1;
+  min-width: 80px;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.solve-btn:hover { background: rgba(255, 255, 255, 0.15); }
+
+.solve-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: transparent;
+}
+
+/* ========== Resistor Color Code Calculator ========== */
+
+.resistor-calculator {
+  background: linear-gradient(180deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.05) 100%);
+  border-radius: 20px;
+  padding: 45px;
+  border: 1px solid rgba(102, 126, 234, 0.25);
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.resistor-calculator::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #667eea 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+.resistor-calculator h3 {
+  font-size: 1.5rem; color: #fff; margin-bottom: 25px; text-align: center;
+  padding-bottom: 15px; border-bottom: 2px solid rgba(102, 126, 234, 0.5);
+}
+
+.resistor-visual {
+  display: flex; justify-content: center; margin-bottom: 30px; padding: 30px 20px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.resistor-body { display: flex; align-items: center; position: relative; }
+
+.resistor-lead {
+  width: 60px; height: 4px;
+  background: linear-gradient(180deg, #c0c0c0 0%, #808080 50%, #c0c0c0 100%);
+  border-radius: 2px;
+}
+
+.resistor-lead.left { margin-right: -5px; }
+.resistor-lead.right { margin-left: -5px; }
+
+.resistor-bands {
+  display: flex; align-items: center; justify-content: center; gap: 12px; padding: 0 25px;
+  background: linear-gradient(180deg, #d4a574 0%, #c4956a 30%, #a67c52 70%, #8b6544 100%);
+  height: 50px; border-radius: 8px; position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.2);
+  min-width: 200px;
+}
+
+.resistor-bands::before, .resistor-bands::after {
+  content: ''; position: absolute; top: 50%; transform: translateY(-50%);
+  width: 20px; height: 45px;
+  background: linear-gradient(180deg, #d4a574 0%, #b8865a 50%, #a67c52 100%);
+  border-radius: 5px;
+}
+
+.resistor-bands::before { left: -8px; }
+.resistor-bands::after { right: -8px; }
+
+.resistor-band {
+  width: 10px; height: 38px; border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.3);
+  z-index: 1; transition: all 0.3s ease;
+}
+
+.resistor-band:hover { transform: scaleY(1.1); }
+
+.band-count-section { margin-bottom: 25px; }
+.band-count-section > label { display: block; color: #c0c0c0; margin-bottom: 10px; font-size: 0.95rem; font-weight: 600; }
+.band-options { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.band-btn {
+  flex: 1; min-width: 100px; padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff; border-radius: 8px; cursor: pointer; transition: all 0.3s ease;
+  font-size: 0.95rem; font-weight: 600;
+}
+
+.band-btn:hover { background: rgba(255, 255, 255, 0.15); }
+.band-btn.active { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-color: transparent; }
+
+.color-selectors {
+  display: flex; flex-direction: column; gap: 20px; margin-bottom: 25px; padding: 25px;
+  background: rgba(255, 255, 255, 0.03); border-radius: 15px; border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.color-group { display: flex; flex-direction: column; gap: 10px; }
+.color-group label { color: #e0e0e0; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+.color-buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.color-btn {
+  width: 40px; height: 40px; border-radius: 8px; border: 3px solid transparent;
+  cursor: pointer; transition: all 0.3s ease; position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.color-btn:hover { transform: scale(1.1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); }
+.color-btn.selected { border-color: #667eea; transform: scale(1.15); box-shadow: 0 4px 20px rgba(102, 126, 234, 0.5); }
+
+.color-btn .checkmark {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  color: #fff; font-size: 1.2rem; font-weight: bold; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.color-reference {
+  margin-bottom: 25px; padding: 20px;
+  background: rgba(102, 126, 234, 0.1); border-radius: 12px; border-left: 4px solid #667eea;
+}
+
+.color-reference h4 { color: #fff; font-size: 1.1rem; margin-bottom: 15px; font-weight: 600; }
+.reference-table { display: flex; flex-wrap: wrap; gap: 10px; }
+
+.reference-item {
+  display: flex; align-items: center; gap: 8px; padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.05); border-radius: 8px; min-width: 100px;
+}
+
+.ref-color { width: 20px; height: 20px; border-radius: 4px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }
+.ref-name { color: #b8b8b8; font-size: 0.85rem; text-transform: capitalize; flex: 1; }
+.ref-value { color: #667eea; font-weight: 700; font-size: 0.9rem; }
+
+.resistor-result { text-align: center; }
+
+.result-main { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+.result-details { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+
+.result-detail-item {
+  display: flex; flex-direction: column; align-items: center; gap: 5px;
+  padding: 15px 20px; background: rgba(255, 255, 255, 0.05); border-radius: 10px; min-width: 120px;
+}
+
+.detail-label { color: #888; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.detail-value { color: #fff; font-size: 1.1rem; font-weight: 600; }
+
+/* ========== Series & Parallel Calculator ========== */
+
+.series-parallel-calculator {
+  background: linear-gradient(180deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.05) 100%);
+  border-radius: 20px; padding: 45px; border: 1px solid rgba(102, 126, 234, 0.25);
+  max-width: 900px; margin: 0 auto;
+  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  position: relative; overflow: hidden;
+}
+
+.series-parallel-calculator::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #667eea 100%);
+  background-size: 200% 100%; animation: shimmer 3s ease-in-out infinite;
+}
+
+.series-parallel-calculator h3 {
+  font-size: 1.5rem; color: #fff; margin-bottom: 25px; text-align: center;
+  padding-bottom: 15px; border-bottom: 2px solid rgba(102, 126, 234, 0.5);
+}
+
+.circuit-diagram-box {
+  background: rgba(0, 0, 0, 0.2); border-radius: 15px; padding: 30px; margin-bottom: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1); display: flex; justify-content: center;
+  align-items: center; min-height: 100px;
+}
+
+.series-diagram { display: flex; align-items: center; gap: 5px; }
+
+.wire-line {
+  width: 30px; height: 3px;
+  background: linear-gradient(90deg, #667eea, #764ba2); border-radius: 2px;
+}
+
+.resistor-symbol {
+  display: flex; align-items: center; justify-content: center; width: 60px; height: 25px;
+  background: linear-gradient(180deg, #d4a574 0%, #a67c52 100%);
+  border-radius: 4px; border: 2px solid #8b6544; position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.resistor-symbol::before, .resistor-symbol::after {
+  content: ''; position: absolute; width: 15px; height: 3px;
+  background: linear-gradient(90deg, #667eea, #764ba2); top: 50%; transform: translateY(-50%);
+}
+
+.resistor-symbol::before { left: -17px; }
+.resistor-symbol::after { right: -17px; }
+.resistor-symbol span { font-size: 0.75rem; color: #fff; font-weight: 600; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+
+.parallel-diagram { display: flex; align-items: center; gap: 10px; }
+
+.parallel-left-rail, .parallel-right-rail {
+  width: 4px; height: 100%; min-height: 80px;
+  background: linear-gradient(180deg, #667eea, #764ba2); border-radius: 2px;
+}
+
+.parallel-resistors { display: flex; flex-direction: column; gap: 15px; }
+.parallel-branch { display: flex; align-items: center; gap: 5px; }
+.branch-wire { width: 20px; height: 3px; background: linear-gradient(90deg, #667eea, #764ba2); border-radius: 2px; }
+
+.resistor-inputs {
+  background: rgba(255, 255, 255, 0.03); border-radius: 15px; padding: 25px;
+  margin-bottom: 25px; border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.inputs-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.inputs-header h4 { color: #fff; font-size: 1.1rem; margin: 0; }
+
+.add-resistor-btn {
+  padding: 8px 16px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none; color: #fff; border-radius: 8px; cursor: pointer;
+  font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease;
+}
+
+.add-resistor-btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4); }
+.add-resistor-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.resistor-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+.resistor-input-row { display: flex; align-items: center; gap: 10px; }
+.resistor-input-row label { color: #667eea; font-weight: 700; font-size: 0.95rem; min-width: 35px; }
+.resistor-input-row .input-with-unit { flex: 1; height: 45px; }
+
+.remove-resistor-btn {
+  width: 30px; height: 30px; background: rgba(255, 82, 82, 0.2); border: 1px solid rgba(255, 82, 82, 0.4);
+  color: #ff5252; border-radius: 6px; cursor: pointer; font-size: 1.2rem; font-weight: bold;
+  transition: all 0.3s ease; display: flex; align-items: center; justify-content: center;
+}
+
+.remove-resistor-btn:hover { background: rgba(255, 82, 82, 0.4); border-color: #ff5252; }
+
+.series-parallel-result .result-formula {
+  margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #b8b8b8; font-size: 0.95rem; font-family: 'Courier New', monospace;
+}
+
+.series-parallel-result .result-formula sub { font-size: 0.7em; }
+
+/* ========== Ohm's Law Calculator ========== */
+
+.ohms-law-calculator {
+  background: linear-gradient(180deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.05) 100%);
+  border-radius: 20px; padding: 45px; border: 1px solid rgba(102, 126, 234, 0.25);
+  max-width: 900px; margin: 0 auto;
+  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  position: relative; overflow: hidden;
+}
+
+.ohms-law-calculator::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #667eea 100%);
+  background-size: 200% 100%; animation: shimmer 3s ease-in-out infinite;
+}
+
+.ohms-law-calculator h3 {
+  font-size: 1.5rem; color: #fff; margin-bottom: 25px; text-align: center;
+  padding-bottom: 15px; border-bottom: 2px solid rgba(102, 126, 234, 0.5);
+}
+
+.ohms-triangle {
+  display: flex; flex-direction: column; align-items: center; gap: 20px; margin-bottom: 30px;
+  padding: 25px; background: rgba(0, 0, 0, 0.2); border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.triangle-container {
+  display: flex; flex-direction: column; align-items: center;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.3) 0%, rgba(118, 75, 162, 0.3) 100%);
+  border: 3px solid #667eea; border-radius: 15px; padding: 20px 40px; min-width: 150px;
+}
+
+.triangle-top { font-size: 2.5rem; font-weight: 800; color: #fff; padding-bottom: 10px; }
+.triangle-divider { width: 100%; height: 3px; background: #667eea; margin: 10px 0; }
+.triangle-bottom { display: flex; align-items: center; gap: 15px; font-size: 2rem; font-weight: 800; color: #fff; }
+.triangle-bottom .multiply { color: #667eea; font-size: 1.5rem; }
+
+.triangle-formulas { display: flex; gap: 30px; flex-wrap: wrap; justify-content: center; }
+
+.triangle-formulas span {
+  padding: 10px 20px; background: rgba(102, 126, 234, 0.2); border-radius: 8px;
+  color: #fff; font-family: 'Courier New', monospace; font-size: 1rem; font-weight: 600;
+}
+
+.ohms-inputs { grid-template-columns: repeat(2, 1fr); }
+
+.ohms-result .result-formula-used {
+  margin-top: 15px; padding: 12px 20px; background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px; display: flex; flex-direction: column; gap: 5px;
+}
+
+.formula-label, .power-label { color: #888; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.formula-text { color: #fff; font-family: 'Courier New', monospace; font-size: 1rem; }
+
+.result-power {
+  margin-top: 10px; padding: 12px 20px;
+  background: linear-gradient(135deg, rgba(255, 193, 7, 0.15) 0%, rgba(255, 152, 0, 0.15) 100%);
+  border-radius: 8px; border-left: 3px solid #ffc107;
+  display: flex; flex-direction: column; gap: 5px;
+}
+
+.power-value { color: #ffc107; font-family: 'Courier New', monospace; font-size: 1.1rem; font-weight: 600; }
+
+/* ========== RC Filter Calculator ========== */
+
+.rc-filter-calculator {
+  background: linear-gradient(180deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.05) 100%);
+  border-radius: 20px; padding: 45px; border: 1px solid rgba(102, 126, 234, 0.25);
+  max-width: 900px; margin: 0 auto;
+  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  position: relative; overflow: hidden;
+}
+
+.rc-filter-calculator::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #667eea 100%);
+  background-size: 200% 100%; animation: shimmer 3s ease-in-out infinite;
+}
+
+.rc-filter-calculator h3 {
+  font-size: 1.5rem; color: #fff; margin-bottom: 25px; text-align: center;
+  padding-bottom: 15px; border-bottom: 2px solid rgba(102, 126, 234, 0.5);
+}
+
+.filter-type-selector { display: flex; gap: 15px; margin-bottom: 25px; justify-content: center; }
+
+.filter-btn {
+  flex: 1; max-width: 220px; padding: 18px 25px;
+  background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(255, 255, 255, 0.2);
+  color: #fff; border-radius: 12px; cursor: pointer; transition: all 0.3s ease;
+  font-size: 1rem; font-weight: 600; display: flex; flex-direction: column;
+  align-items: center; gap: 8px;
+}
+
+.filter-btn:hover { background: rgba(255, 255, 255, 0.15); }
+
+.filter-btn.active.lowpass {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  border-color: transparent; box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4);
+}
+
+.filter-btn.active.highpass {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  border-color: transparent; box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
+}
+
+.filter-icon { font-size: 1.5rem; }
+
+.circuit-info-box {
+  background: rgba(0, 0, 0, 0.2); border-radius: 12px; padding: 20px;
+  margin-bottom: 20px; border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.circuit-title { color: #fff; font-size: 1.1rem; font-weight: 600; margin-bottom: 10px; }
+.circuit-desc { color: #b8b8b8; }
+.circuit-desc p { margin: 5px 0; font-size: 0.95rem; }
+.circuit-desc strong { color: #667eea; }
+.rc-inputs { grid-template-columns: repeat(2, 1fr); }
+.rc-result { text-align: center; }
+
+.rc-result.lowpass {
+  border-color: rgba(52, 152, 219, 0.5);
+  background: linear-gradient(135deg, rgba(52, 152, 219, 0.2) 0%, rgba(41, 128, 185, 0.2) 100%);
+}
+
+.rc-result.highpass {
+  border-color: rgba(231, 76, 60, 0.5);
+  background: linear-gradient(135deg, rgba(231, 76, 60, 0.2) 0%, rgba(192, 57, 43, 0.2) 100%);
+}
+
+.result-filter-type { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px; }
+
+/* ========== Capacitor Charging Calculator ========== */
+
+.capacitor-charging-calculator .formula-display {
+  background: rgba(102, 126, 234, 0.1); border: 1px solid rgba(102, 126, 234, 0.25);
+  border-radius: 10px; padding: 12px 18px; color: #e0e0e0; font-size: 1rem;
+}
+
+.capacitor-charging-calculator .formula-display sup { font-size: 0.75em; }
+
+.capacitor-result .charging-table { margin-top: 20px; }
+.capacitor-result .charging-table h4 { color: #fff; margin-bottom: 12px; font-size: 1.1rem; }
+
+/* ========== PCB Trace Width Calculator ========== */
+
+.pcb-trace-calculator .formula-display sup { font-size: 0.75em; }
+
+.layer-toggle { display: flex; gap: 10px; }
+
+.layer-btn {
+  flex: 1; padding: 10px 15px; border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15); background: rgba(255, 255, 255, 0.05);
+  color: #b8b8b8; cursor: pointer; font-weight: 500; transition: all 0.3s;
+}
+
+.layer-btn:hover { background: rgba(255, 255, 255, 0.1); }
+
+.layer-btn.active.external {
+  background: linear-gradient(135deg, rgba(0, 200, 83, 0.2) 0%, rgba(0, 200, 83, 0.05) 100%);
+  border-color: rgba(0, 200, 83, 0.4); color: #00c853; font-weight: 600;
+}
+
+.layer-btn.active.internal {
+  background: linear-gradient(135deg, rgba(255, 152, 0, 0.2) 0%, rgba(255, 152, 0, 0.05) 100%);
+  border-color: rgba(255, 152, 0, 0.4); color: #ff9800; font-weight: 600;
+}
+
+.pcb-result-details { margin-top: 10px; }
+.pcb-result-details .tau-table tbody td:first-child { color: #b8b8b8; font-weight: 400; }
+.pcb-result-details .tau-table tbody td:last-child { color: #00d4ff; font-weight: 600; }
+
+.pcb-warning {
+  margin-top: 18px; padding: 12px 16px;
+  background: rgba(255, 152, 0, 0.1); border: 1px solid rgba(255, 152, 0, 0.25);
+  border-left: 4px solid #ff9800; border-radius: 8px;
+  color: #ffb74d; font-size: 0.88rem; line-height: 1.5;
+}
+
+/* ========== Battery Life Calculator ========== */
+
+.battery-life-calculator .formula-display {
+  background: rgba(76, 175, 80, 0.1); border: 1px solid rgba(76, 175, 80, 0.25);
+  border-radius: 10px; padding: 12px 18px; color: #e0e0e0; font-size: 1rem;
+}
+
+.battery-life-value { font-size: 1.6rem !important; }
+.battery-result-details { margin-top: 10px; }
+.battery-result-details .tau-table tbody td:first-child { color: #b8b8b8; font-weight: 400; }
+.battery-result-details .tau-table tbody td:last-child { color: #00d4ff; font-weight: 600; }
+
+/* ========== Op-Amp Gain Calculator ========== */
+
+.opamp-calculator .formula-display {
+  background: rgba(156, 39, 176, 0.1); border: 1px solid rgba(156, 39, 176, 0.25);
+  border-radius: 10px; padding: 12px 18px; color: #e0e0e0; font-size: 0.95rem;
+}
+
+.opamp-circuit-info {
+  background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px; padding: 12px 20px; margin-bottom: 15px;
+}
+
+.opamp-circuit-info ul { list-style: none; padding: 0; margin: 0; }
+.opamp-circuit-info li { color: #b8b8b8; padding: 4px 0; font-size: 0.9rem; }
+.opamp-circuit-info li::before { content: "→ "; color: #667eea; font-weight: 600; }
+
+.supply-voltage-row { display: flex; gap: 10px; }
+.supply-voltage-row .input-with-unit { flex: 1; }
+
+.opamp-result-details { margin-top: 10px; }
+.opamp-result-details .tau-table tbody td:first-child { color: #b8b8b8; font-weight: 400; }
+.opamp-result-details .tau-table tbody td:last-child { color: #00d4ff; font-weight: 600; }
+
+.opamp-clip-warning {
+  margin-top: 12px; padding: 12px 16px;
+  background: rgba(244, 67, 54, 0.12); border: 1px solid rgba(244, 67, 54, 0.3);
+  border-left: 4px solid #f44336; border-radius: 8px;
+  color: #ef9a9a; font-size: 0.88rem; line-height: 1.5;
+}
+
+.opamp-result.has-warning { border-color: rgba(244, 67, 54, 0.3); }
+
+/* ========== 555 Timer Calculator ========== */
+
+.timer555-calculator .formula-display {
+  background: rgba(255, 87, 34, 0.1); border: 1px solid rgba(255, 87, 34, 0.25);
+  border-radius: 10px; padding: 12px 18px; color: #e0e0e0; font-size: 0.95rem;
+}
+
+.timer555-details { margin-top: 10px; }
+.timer555-details .tau-table tbody td:first-child { color: #b8b8b8; font-weight: 400; }
+.timer555-details .tau-table tbody td:last-child { color: #00d4ff; font-weight: 600; }
+
+.duty-cycle-bar {
+  margin-top: 20px; padding: 15px;
+  background: rgba(255, 255, 255, 0.03); border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.duty-label { color: #e0e0e0; font-weight: 600; font-size: 0.95rem; margin-bottom: 10px; text-align: center; }
+
+.duty-track {
+  width: 100%; height: 24px; background: rgba(244, 67, 54, 0.2);
+  border-radius: 12px; overflow: hidden; position: relative;
+}
+
+.duty-fill {
+  height: 100%; background: linear-gradient(90deg, #4caf50, #66bb6a);
+  border-radius: 12px 0 0 12px; transition: width 0.4s ease;
+}
+
+.duty-labels { display: flex; justify-content: space-between; margin-top: 6px; font-size: 0.8rem; }
+.duty-labels span:first-child { color: #66bb6a; font-weight: 600; }
+.duty-labels span:last-child { color: #ef9a9a; font-weight: 600; }
+
+/* ========== Calculator Responsive ========== */
+
+@media (max-width: 768px) {
+  .calculator-box, .voltage-calculator, .resistor-calculator,
+  .series-parallel-calculator, .ohms-law-calculator, .rc-filter-calculator { padding: 25px 20px; }
+
+  .voltage-calculator .calculator-diagram-wrapper { flex-direction: column; align-items: center; }
+  .circuit-points { min-width: 100%; }
+  .example-values { flex-direction: column; gap: 8px; }
+  .solve-options { gap: 8px; }
+  .solve-btn { padding: 10px 15px; font-size: 0.85rem; min-width: 70px; }
+
+  .resistor-bands { min-width: 160px; height: 40px; gap: 8px; padding: 0 20px; }
+  .resistor-band { width: 8px; height: 30px; }
+  .resistor-lead { width: 40px; }
+  .color-btn { width: 35px; height: 35px; }
+  .reference-item { min-width: 80px; padding: 6px 10px; }
+  .result-details { flex-direction: column; align-items: stretch; }
+  .result-detail-item { flex-direction: row; justify-content: space-between; }
+
+  .resistor-list { grid-template-columns: 1fr; }
+  .inputs-header { flex-direction: column; gap: 15px; align-items: flex-start; }
+  .add-resistor-btn { width: 100%; }
+  .series-diagram { flex-wrap: wrap; justify-content: center; gap: 10px; }
+
+  .formula-cards { grid-template-columns: 1fr; }
+  .triangle-formulas { flex-direction: column; gap: 10px; }
+  .triangle-formulas span { text-align: center; }
+  .ohms-inputs { grid-template-columns: 1fr; }
+  .examples-grid { grid-template-columns: 1fr; }
+
+  .filter-type-selector { flex-direction: column; }
+  .filter-btn { max-width: none; }
+  .rc-inputs { grid-template-columns: 1fr; }
+
+  .tau-table thead th, .tau-table tbody td { padding: 8px 10px; font-size: 0.8rem; }
+  .layer-toggle { flex-direction: column; gap: 8px; }
+  .supply-voltage-row { flex-direction: column; gap: 8px; }
+}
+
+@media (max-width: 480px) {
+  .resistor-visual { padding: 20px 10px; }
+  .resistor-bands { min-width: 120px; height: 35px; gap: 6px; padding: 0 15px; }
+  .resistor-band { width: 6px; height: 25px; }
+  .resistor-lead { width: 25px; }
+  .band-options { flex-direction: column; }
+  .band-btn { width: 100%; }
+  .color-btn { width: 30px; height: 30px; }
+  .color-reference h4 { font-size: 1rem; }
+  .reference-table { gap: 6px; }
+  .reference-item { min-width: 70px; padding: 5px 8px; }
+  .resistor-input-row { flex-wrap: wrap; }
+  .resistor-input-row .input-with-unit { width: 100%; }
+  .triangle-container { padding: 15px 25px; min-width: 120px; }
+  .triangle-top { font-size: 2rem; }
+  .triangle-bottom { font-size: 1.5rem; }
+  .formula-card-content { font-size: 1.4rem; }
+  .filter-btn { padding: 15px 20px; }
+  .circuit-info-box { padding: 15px; }
+}

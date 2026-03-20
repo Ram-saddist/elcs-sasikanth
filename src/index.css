@@ -8,6 +8,15 @@ html, body, #root {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body.ittalk-page .after-nav {
+  background: linear-gradient(
+    135deg,
+    #1a1a2e 0%,
+    #16213e 50%,
+    #0f3460 100%
+  );
+}
+
 /* Utility if you use a top fixed nav */
 .after-nav {
   padding-top: calc(var(--nav-height) + 16px);

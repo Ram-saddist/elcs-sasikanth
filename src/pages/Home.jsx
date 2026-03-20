@@ -75,7 +75,7 @@ export default function Home() {
             <div className="row align-items-center g-4">
 
               {/* ABOUT TEXT */}
-              <div className="col-12 col-md-6">
+              <div className="col-12 col-lg-6">
                 <h1>About</h1>
                 <p className="hero-sub">
                   At ELCS, we design and manufacture future-ready embedded modules, control
@@ -94,7 +94,7 @@ export default function Home() {
               </div>
 
               {/* VIDEO */}
-              <div className="col-12 col-md-6 text-center">
+              <div className="col-12 col-lg-6 text-center">
                 <video
                   src="/videos/about.mp4"   // Put your file in /public/videos/
                   autoPlay

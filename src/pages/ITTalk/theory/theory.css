@@ -1,0 +1,615 @@
+/* ========== Base Theory Section ========== */
+
+.theory-section { margin-bottom: 40px; }
+
+.theory-section h2 {
+  font-size: 1.5rem;
+  color: #667eea;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theory-section h2::before { content: "\1F4D8"; font-size: 1.3rem; }
+
+.theory-intro {
+  font-size: 1.05rem;
+  color: #c0c0c0;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.common-uses { margin-bottom: 25px; }
+
+.common-uses h3,
+.how-it-works h3,
+.formula-section h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.common-uses ol { padding-left: 25px; margin: 0; }
+.common-uses li { color: #b8b8b8; padding: 6px 0; font-size: 0.95rem; }
+
+.how-it-works {
+  margin-bottom: 30px;
+  background: rgba(102, 126, 234, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+}
+
+.how-it-works ul { list-style: none; padding: 0; margin: 0; }
+
+.how-it-works li {
+  color: #c0c0c0;
+  padding: 8px 0 8px 20px;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.how-it-works li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+/* ========== Formula Styles (shared across theories) ========== */
+
+.formula-section { margin-bottom: 30px; }
+
+.formula-box {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+  border: 2px solid rgba(102, 126, 234, 0.4);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formula-main {
+  font-size: 1.8rem;
+  color: #fff;
+  font-family: 'Georgia', serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.fraction {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.numerator { border-bottom: 2px solid #fff; padding-bottom: 5px; font-size: 1.5rem; }
+.denominator { padding-top: 5px; font-size: 1.5rem; }
+
+.formula-variables {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+.formula-variables p { color: #b8b8b8; margin: 8px 0; font-size: 0.95rem; }
+.formula-variables strong { color: #667eea; }
+
+.color-code-formula { padding: 25px 30px; }
+
+.color-code-formula .formula-subtitle {
+  font-size: 1rem;
+  color: #b8b8b8;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.color-code-formula .formula-main {
+  font-size: 1.3rem;
+  font-family: 'Courier New', monospace;
+  color: #fff;
+  background: rgba(102, 126, 234, 0.15);
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* ========== Example / Calculation Styles ========== */
+
+.example-calculation-box {
+  background: rgba(102, 126, 234, 0.15);
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+  margin-bottom: 20px;
+}
+
+.calc-title { color: #fff; font-weight: 600; margin-bottom: 10px; font-size: 1rem; }
+
+.calc-formula {
+  color: #c0c0c0;
+  font-size: 1.1rem;
+  font-family: 'Courier New', monospace;
+}
+
+.calc-formula strong { color: #667eea; font-size: 1.2rem; }
+
+.example-result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.25) 0%, rgba(118, 75, 162, 0.25) 100%);
+  border: 2px solid rgba(102, 126, 234, 0.4);
+  border-radius: 12px;
+}
+
+.result-arrow { font-size: 1.5rem; color: #667eea; }
+.result-text { font-size: 1.4rem; color: #fff; }
+.result-text strong { color: #667eea; }
+
+.section-intro { color: #b8b8b8; font-size: 1rem; margin-bottom: 20px; }
+.section-intro strong { color: #667eea; }
+
+/* ========== Resistor Color Code Theory ========== */
+
+.example-section { margin-top: 30px; }
+.example-section h3 { font-size: 1.2rem; color: #fff; margin-bottom: 15px; }
+
+.example-box {
+  background: linear-gradient(135deg, rgba(118, 75, 162, 0.15) 0%, rgba(102, 126, 234, 0.15) 100%);
+  border: 1px solid rgba(118, 75, 162, 0.3);
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.example-resistor-bands {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 15px;
+  padding: 15px;
+  background: linear-gradient(180deg, #d4a574 0%, #a67c52 100%);
+  border-radius: 8px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.example-band {
+  width: 12px;
+  height: 35px;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.example-colors { text-align: center; color: #c0c0c0; font-size: 1rem; margin-bottom: 20px; }
+.example-colors strong { color: #fff; }
+
+.example-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.example-table th,
+.example-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.example-table th {
+  background: rgba(102, 126, 234, 0.2);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.example-table td { color: #c0c0c0; font-size: 0.95rem; }
+.example-table tr:last-child td { border-bottom: none; }
+.example-table tr:hover { background: rgba(255, 255, 255, 0.05); }
+
+.color-dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  margin-right: 8px;
+  vertical-align: middle;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Orientation Section */
+.orientation-section { margin-top: 30px; }
+.orientation-section h3 { font-size: 1.2rem; color: #fff; margin-bottom: 15px; }
+
+.orientation-box {
+  background: linear-gradient(135deg, rgba(255, 193, 7, 0.15) 0%, rgba(255, 152, 0, 0.15) 100%);
+  border: 1px solid rgba(255, 193, 7, 0.4);
+  border-radius: 12px;
+  padding: 20px 25px;
+  border-left: 4px solid #ffc107;
+}
+
+.orientation-box ul { list-style: none; padding: 0; margin: 0; }
+
+.orientation-box li {
+  color: #c0c0c0;
+  padding: 8px 0 8px 25px;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.orientation-box li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  color: #ffc107;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.orientation-box li strong { color: #fff; }
+
+/* Band Types Section */
+.band-types-section { margin-top: 30px; }
+.band-types-section h3 { font-size: 1.2rem; color: #fff; margin-bottom: 10px; }
+
+.band-types-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.band-type-card {
+  background: rgba(102, 126, 234, 0.1);
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.band-type-card h4 {
+  color: #667eea;
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(102, 126, 234, 0.3);
+}
+
+.band-type-card ol { padding-left: 20px; margin: 0; }
+.band-type-card li { color: #c0c0c0; padding: 6px 0; font-size: 0.9rem; }
+.band-type-card li strong { color: #fff; }
+
+/* Color Mapping Section */
+.color-mapping-section { margin-top: 30px; }
+.color-mapping-section h3 { font-size: 1.2rem; color: #fff; margin-bottom: 10px; }
+
+.color-tables-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 15px;
+}
+
+.color-table-container {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.color-table-container h4 { color: #fff; font-size: 1rem; margin-bottom: 15px; text-align: center; }
+
+.color-mapping-table { width: 100%; border-collapse: collapse; }
+
+.color-mapping-table th,
+.color-mapping-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.color-mapping-table th {
+  background: rgba(102, 126, 234, 0.15);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.color-mapping-table td { color: #c0c0c0; font-size: 0.9rem; }
+.color-mapping-table tr:last-child td { border-bottom: none; }
+.color-mapping-table tr:hover { background: rgba(255, 255, 255, 0.03); }
+.tolerance-table { margin-top: 0; }
+
+/* ========== Series & Parallel Theory ========== */
+
+.connection-section {
+  margin-top: 30px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.connection-section h3 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.series-section { border-left: 4px solid #667eea; }
+.parallel-section { border-left: 4px solid #764ba2; }
+.mixed-section { border-left: 4px solid #ffc107; }
+
+.connection-description { color: #c0c0c0; line-height: 1.7; margin-bottom: 20px; }
+.connection-description p { margin: 0; }
+
+.characteristics-box {
+  background: rgba(102, 126, 234, 0.1);
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.characteristics-box h4 { color: #fff; font-size: 1rem; margin-bottom: 10px; }
+.characteristics-box ul { list-style: none; padding: 0; margin: 0; }
+
+.characteristics-box li {
+  color: #b8b8b8;
+  padding: 6px 0 6px 20px;
+  position: relative;
+  font-size: 0.9rem;
+}
+
+.characteristics-box li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+.worked-example {
+  background: linear-gradient(135deg, rgba(118, 75, 162, 0.1) 0%, rgba(102, 126, 234, 0.1) 100%);
+  border: 1px solid rgba(118, 75, 162, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.worked-example h4 {
+  color: #fff;
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.example-given { color: #b8b8b8; margin-bottom: 15px; font-size: 0.95rem; }
+.example-given strong { color: #fff; }
+
+.step-list { padding-left: 20px; margin: 15px 0; }
+.step-list li { color: #c0c0c0; padding: 5px 0; font-size: 0.95rem; }
+
+.example-steps { display: flex; flex-direction: column; gap: 15px; margin-bottom: 15px; }
+
+.example-step {
+  background: rgba(102, 126, 234, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 3px solid #667eea;
+}
+
+.step-label { color: #fff; font-weight: 600; font-size: 0.9rem; margin-bottom: 8px; }
+.mixed-example .calc-formula { font-size: 1rem; }
+
+.rules-section { margin-top: 30px; }
+.rules-section h3 { font-size: 1.2rem; color: #fff; margin-bottom: 15px; }
+
+.rules-box {
+  background: linear-gradient(135deg, rgba(255, 193, 7, 0.1) 0%, rgba(255, 152, 0, 0.1) 100%);
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  border-radius: 12px;
+  padding: 20px 25px;
+  border-left: 4px solid #ffc107;
+}
+
+.rules-box ul { list-style: none; padding: 0; margin: 0; }
+
+.rules-box li {
+  color: #c0c0c0;
+  padding: 8px 0 8px 25px;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.rules-box li::before { content: "\26A0"; position: absolute; left: 0; color: #ffc107; }
+
+/* ========== Ohm's Law Theory ========== */
+
+.ohms-formulas { margin-top: 30px; }
+
+.formula-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.formula-card {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+  border: 2px solid rgba(102, 126, 234, 0.4);
+  border-radius: 15px;
+  padding: 25px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.formula-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+  border-color: #667eea;
+}
+
+.formula-card-title {
+  color: #b8b8b8;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.formula-card-content {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: 'Courier New', monospace;
+}
+
+.examples-section { margin-top: 30px; }
+.examples-section h3 { font-size: 1.2rem; color: #fff; margin-bottom: 20px; }
+
+.examples-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.example-card {
+  background: linear-gradient(135deg, rgba(118, 75, 162, 0.15) 0%, rgba(102, 126, 234, 0.15) 100%);
+  border: 1px solid rgba(118, 75, 162, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.example-card-title {
+  color: #667eea;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.example-card .example-given { margin-bottom: 15px; }
+.example-card .example-calculation-box { margin-bottom: 15px; }
+.example-card .example-result { justify-content: flex-start; padding: 15px; }
+
+.notes-section { margin-top: 30px; }
+.notes-section h3 { font-size: 1.2rem; color: #fff; margin-bottom: 15px; }
+
+.notes-box {
+  background: linear-gradient(135deg, rgba(255, 82, 82, 0.1) 0%, rgba(255, 152, 0, 0.1) 100%);
+  border: 1px solid rgba(255, 82, 82, 0.3);
+  border-radius: 12px;
+  padding: 20px 25px;
+  border-left: 4px solid #ff5252;
+}
+
+.notes-box ul { list-style: none; padding: 0; margin: 0; }
+
+.notes-box li {
+  color: #c0c0c0;
+  padding: 8px 0 8px 25px;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.notes-box li::before { content: "\26A0"; position: absolute; left: 0; color: #ff5252; }
+
+/* ========== RC Filter Theory ========== */
+
+.filter-section {
+  margin-top: 30px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.filter-section h3 { font-size: 1.3rem; color: #fff; margin-bottom: 15px; }
+.lowpass-section { border-left: 4px solid #3498db; }
+.lowpass-section h3 { color: #3498db; }
+.highpass-section { border-left: 4px solid #e74c3c; }
+.highpass-section h3 { color: #e74c3c; }
+
+.filter-description { color: #c0c0c0; line-height: 1.7; margin-bottom: 20px; }
+.filter-description p { margin: 0; }
+
+.circuit-box {
+  background: rgba(102, 126, 234, 0.1);
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.circuit-box h4 { color: #fff; font-size: 1rem; margin-bottom: 10px; }
+.circuit-box p { color: #b8b8b8; margin: 0; font-size: 0.95rem; }
+
+.uses-box { margin-bottom: 20px; }
+.uses-box h4 { color: #fff; font-size: 1rem; margin-bottom: 10px; }
+.uses-box ul { list-style: none; padding: 0; margin: 0; }
+
+.uses-box li {
+  color: #b8b8b8;
+  padding: 6px 0 6px 20px;
+  position: relative;
+  font-size: 0.9rem;
+}
+
+.uses-box li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+/* ========== Capacitor Charging Theory ========== */
+
+.theory-tau-table {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.theory-tau-table thead th:first-child { border-radius: 10px 0 0 0; }
+.theory-tau-table thead th:last-child { border-radius: 0 10px 0 0; }
+
+/* ========== Theory Responsive ========== */
+
+@media (max-width: 768px) {
+  .band-types-grid,
+  .color-tables-wrapper { grid-template-columns: 1fr; }
+  .orientation-box { padding: 15px 20px; }
+  .band-type-card,
+  .color-table-container { padding: 15px; }
+  .formula-cards { grid-template-columns: 1fr; }
+  .examples-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .color-mapping-table th,
+  .color-mapping-table td { padding: 8px 10px; font-size: 0.85rem; }
+  .formula-card-content { font-size: 1.4rem; }
+}
