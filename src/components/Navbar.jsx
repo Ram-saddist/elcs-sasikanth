@@ -46,7 +46,7 @@ export default function NavbarComponent() {
         {/* CENTER: Desktop Links */}
         <ul className="nav-links-desktop">
           <li>
-            <Link to="/ittalk" className="nav-link">IT Talk</Link>
+            <Link to="/ittalk" className="nav-link">iT Talk</Link>
           </li>
           <li>
             <Link to="/progress" className="nav-link">Progress</Link>

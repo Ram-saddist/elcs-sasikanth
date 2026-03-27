@@ -46,7 +46,7 @@ export default function Footer() {
           {/* Company Address */}
           <div className="col-md-3">
             <h5 className="fw-bold">ELCS Pvt Ltd</h5>
-            <p className="mb-1">SRWA 201, Srinagar Colony 3rd Line</p>
+            <p className="mb-1">Ambapuram - 6th line</p>
             <p className="mb-1">Vijayawada, AP 520012</p>
             <p className="mb-1">India</p>
           </div>
@@ -54,18 +54,22 @@ export default function Footer() {
           {/* Contact Info */}
           <div className="col-md-3">
             <h6 className="fw-semibold text-white">Contact</h6>
-            <p className="mb-1"><strong>Email:</strong> info@elcs.com</p>
-            <p className="mb-1"><strong>WhatsApp:</strong> +91 76739 27456</p>
-            <p className="mb-1"><strong>Phone:</strong> +91 76739 27456</p>
+            <p className="mb-1"><strong>Email:</strong> elcs.1126.main@gmail.com</p>
+            <p className="mb-1"><strong>WhatsApp:</strong> 7382382685</p>
+            <p className="mb-1"><strong>Phone:</strong> 7382382685</p>
           </div>
 
           {/* Social Links */}
           <div className="col-md-3">
             <h6 className="fw-semibold text-white">Follow Us</h6>
             <div className="d-flex gap-3 fs-4">
-              <a href="#" className="text-light text-decoration-none">📸</a>
-              <a href="#" className="text-light text-decoration-none">💼</a>
-              <a href="#" className="text-light text-decoration-none">💻</a>
+              <a target="_blank" href="https://www.linkedin.com/company/embedded-labs-and-control-systems/?viewAsMember=true" className="text-light text-decoration-none"> 
+              <i class="fa-brands fa-linkedin"></i></a>
+              <a target="_blank" href="https://www.instagram.com/elcs_electronics?igsh=MWFmdWpjMW9odnV0OA" className="text-light text-decoration-none">
+              <i class="fa-brands fa-instagram"></i></a>
+              <a target="_blank" href="#" className="text-light text-decoration-none">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
             </div>
           </div>
 

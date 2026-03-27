@@ -22,7 +22,7 @@
   position: relative;
   /* This defines the "specific height" where particles appear.
      Change to 80vh, 60vh or a fixed px value as needed. */
-  height: 80vh;
+  
   min-height: 560px;
   padding: 120px 20px 60px;
   color: #fff;
@@ -46,7 +46,8 @@
 
 .hero-sub {
   margin: 0;
-  font-size: 18px;
+  font-size: 1.2rem !important;
+  font-weight: bold;
   opacity: 0.95;
   font-size: 1.3rem;
   text-align: justify;
@@ -79,6 +80,10 @@
   max-width: 1500px; 
   width: 100%
 }
+.video-home{
+  max-height: "450px"; 
+  object-fit: "cover"
+}
 
 /* Responsive tweaks */
 @media (max-width: 900px){
@@ -86,4 +91,14 @@
     padding-top: calc(var(--nav-height, 64px) + 24px);
   }
   .hero-content { padding: 0 12px; }
+}
+
+@media (max-width:576px){
+  .hero-sub{
+    font-size: 1rem !important;
+  }
+  .video-home{
+    position: relative;
+    z-index: 1;
+  }
 }

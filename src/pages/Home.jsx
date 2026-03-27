@@ -84,7 +84,7 @@ export default function Home() {
                   modules, ready-to-use PCB designs, and custom embedded solutions that help
                   engineers, makers, and industries innovate faster. <br /> Every product
                   comes with complete 3D models, technical documentation, and full support
-                  files, making integration easy for everyone—from beginners to professionals. <br />
+                  files, making integration easy for everyon from beginners to professionals. <br />
                   We follow recognized industry standards such as IPC design rules, RoHS
                   compliance, and ESD-safe processes, ensuring reliable and robust
                   performance in real-world applications. <br /> At ELCS, we aim to make
@@ -100,8 +100,7 @@ export default function Home() {
                   autoPlay
                   muted
                   loop
-                  className="img-fluid rounded shadow"
-                  style={{ maxHeight: "320px", objectFit: "cover" }}
+                  className="img-fluid rounded shadow video-home"
                 />
               </div>
 

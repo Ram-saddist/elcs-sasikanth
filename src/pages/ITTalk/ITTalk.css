@@ -12,7 +12,6 @@
 .ittalk-header {
   text-align: center;
   margin-bottom: 40px;
-  padding-top: 20px;
 }
 
 .ittalk-header h1 {
@@ -48,13 +47,28 @@
   border-radius: 20px;
   padding: 20px 0;
   border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(15px);
+  position: sticky;
+  top: 100px;
+  /* ✅ IMPORTANT FIX */
+  max-height: calc(100vh - 250px); /* adjust based on header */
+  overflow-y: auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+/* .products-sidebar {
+  width: 280px;
+  flex-shrink: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+  border-radius: 20px;
+  padding: 20px 0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   height: fit-content;
   position: sticky;
   top: 100px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-}
+} */
 
 .sidebar-title {
   font-size: 1.1rem;
@@ -127,7 +141,7 @@
 
 .detail-image {
   width: 100%;
-  max-height: 400px;
+  max-height: 500px;
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 30px;

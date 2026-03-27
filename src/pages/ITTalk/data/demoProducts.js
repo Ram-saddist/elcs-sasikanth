@@ -3,7 +3,7 @@ export const demoProducts = [
     id: 9,
     name: "Voltage Divider Calculator",
     title: "Voltage Divider Calculator – Formula, Theory & Online Tool",
-    image: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=800&h=600&fit=crop",
+    image: "/images/voltage_divider.jpg",
     fullDescription: "A voltage divider is a simple and widely used electronic circuit that reduces a higher input voltage to a lower output voltage using two resistors connected in series.",
     theory: {
       whatIs: "A voltage divider is a simple and widely used electronic circuit that reduces a higher input voltage to a lower output voltage using two resistors connected in series.",
@@ -35,7 +35,7 @@ export const demoProducts = [
     id: 2,
     name: "Resistor Color Code Calculator",
     title: "Resistor Color Code Calculator – Decode Resistor Values Instantly",
-    image: "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=800&h=600&fit=crop",
+    image: "/images/Resistor_color_code.png",
     fullDescription: "The Resistor Color Code Calculator helps you quickly identify resistor values from their color bands. Simply select the colors and get the resistance value with tolerance. You can also reverse calculate - enter a resistance value and get the corresponding color code. Supports 4-band, 5-band, and 6-band resistors including temperature coefficient for precision resistors.",
     theory: {
       whatIs: "Resistor color codes are a standardized system of colored bands painted on resistors to indicate their resistance value, tolerance, and sometimes temperature coefficient. This system allows quick identification without needing measuring equipment.",
@@ -72,7 +72,7 @@ export const demoProducts = [
     id: 4,
     name: "Series & Parallel Resistor Calculator",
     title: "Series & Parallel Resistor Calculator – Find Equivalent Resistance",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop",
+    image: "/images/Resistor_series_and_parallel.png",
     fullDescription: "The Series and Parallel Resistor Calculator computes the equivalent resistance for any combination of resistors. For series connections, resistances simply add up. For parallel connections, the calculator uses the reciprocal formula. You can add multiple resistors and see real-time results. Perfect for circuit design and troubleshooting.",
     theory: {
       whatIs: "In electronic circuits, resistors can be connected in series, parallel, or a combination of both. These configurations are used to control current, adjust resistance, and distribute voltage according to circuit requirements.",
@@ -118,7 +118,7 @@ export const demoProducts = [
     id: 5,
     name: "RC Low Pass & High Pass Filter Calculator",
     title: "RC Low-Pass & High-Pass Filter Calculator – Design RC Filters",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+    image: "/images/RC_low_and_high_ pass_filters.png",
     fullDescription: "The RC Filter Calculator helps you design passive first-order filters. For low-pass filters, frequencies below the cutoff pass through while higher frequencies are attenuated. High-pass filters do the opposite. Enter any two values (R, C, or cutoff frequency) and calculate the third. Includes frequency response visualization.",
     theory: {
       whatIs: "An RC filter is a basic analog circuit made using a resistor (R) and a capacitor (C). It is used to control which frequencies pass through a circuit and which are blocked. RC filters are simple, low-cost, and widely used in electronic systems.",
@@ -162,7 +162,7 @@ export const demoProducts = [
     id: 6,
     name: "Ohm's Law Calculator",
     title: "Ohm's Law Calculator – Voltage, Current & Resistance",
-    image: "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=800&h=600&fit=crop",
+    image: "/images/Ohm's Law diagram.png",
     fullDescription: "The Ohm's Law Calculator is a fundamental electronics tool that applies V = IR and P = VI relationships. Enter any two known values (voltage, current, resistance, or power) and instantly calculate the remaining values. Essential for circuit analysis, component selection, and electrical troubleshooting.",
     theory: {
       whatIs: "Ohm's Law is one of the most fundamental rules in electronics. It defines the relationship between Voltage (V), Current (I), and Resistance (R) in an electrical circuit. It states that the current flowing through a conductor is directly proportional to the voltage applied and inversely proportional to the resistance.",
@@ -204,7 +204,7 @@ export const demoProducts = [
     id: 7,
     name: "Capacitor Charge Time & RC Time Constant",
     title: "Capacitor Charging Calculator – RC Time Constant & Voltage",
-    image: "https://images.unsplash.com/photo-1620283085439-39620a1e21c4?w=800&h=600&fit=crop",
+    image: "/images/Capacitor charging infographic with calculator.png",
     fullDescription: "When a capacitor is connected to a voltage source through a resistor, it does not charge instantly. Instead, the voltage across the capacitor increases gradually over time. This calculator determines the RC time constant (τ), capacitor voltage at any time t, and shows the charging behavior of the RC circuit.",
     theory: {
       whatIs: "When a capacitor is connected to a voltage source through a resistor, it does not charge instantly. Instead, the voltage across the capacitor increases gradually over time. This charging behavior depends on the resistance (R), the capacitance (C), and the applied voltage (Vin). The rate at which the capacitor charges is determined by the Time Constant (τ).",
@@ -255,7 +255,7 @@ export const demoProducts = [
     id: 8,
     name: "PCB Trace Width & Current Calculator",
     title: "PCB Trace Width Calculator – IPC-2221 Current & Width Tool",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop",
+    image: "/images/PCB_tarce_width_Calculator.png",
     fullDescription: "PCB trace width is the width of the copper track on a printed circuit board that carries electrical current. If the trace is too thin for the current, it will heat up, voltage drop increases, copper may burn, and PCB reliability reduces. Choosing the correct trace width is important for safe and stable circuit operation.",
     theory: {
       whatIs: "PCB trace width is the width of the copper track on a printed circuit board that carries electrical current. If the trace is too thin, it heats up, voltage drop increases, and copper may burn. If the trace is wider, there is less heating, lower resistance, and better reliability. Choosing the correct trace width is critical for safe and stable circuit operation.",
@@ -309,7 +309,7 @@ export const demoProducts = [
     id: 10,
     name: "Battery Life Calculator",
     title: "Battery Life Calculator – Estimate Runtime for Any Device",
-    image: "https://images.unsplash.com/photo-1619641805634-98e9cb58a3b3?w=800&h=600&fit=crop",
+    image: "/images/Battery life calculator infographic.png",
     fullDescription: "Battery life is the estimated amount of time a battery can power a device before it needs recharging or replacement. It depends on battery capacity, load current consumption, operating conditions, and circuit efficiency. This calculator helps estimate how long your device will run on a given battery.",
     theory: {
       whatIs: "Battery life is the estimated amount of time a battery can power a device before it needs recharging or replacement. It depends on battery capacity (mAh or Ah), load current consumption (mA or A), operating conditions, and efficiency of the circuit. This calculator helps estimate runtime for both continuous and duty-cycled loads.",
@@ -373,7 +373,7 @@ export const demoProducts = [
     id: 11,
     name: "Op-Amp Voltage & Gain Calculator",
     title: "Op-Amp Voltage Amplifier & Gain Calculator – Inverting & Non-Inverting",
-    image: "https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=800&h=600&fit=crop",
+    image: "/images/OP-Amp_voltage amplifier.png",
     fullDescription: "An Operational Amplifier (Op-Amp) is a high-gain voltage amplifier used to amplify small input signals. It amplifies the difference between its two input terminals: Non-inverting (+) and Inverting (–). This calculator covers inverting and non-inverting amplifier configurations with gain, output voltage, and dB calculations.",
     theory: {
       whatIs: "An Operational Amplifier (Op-Amp) is a high-gain voltage amplifier used to amplify small input signals. It amplifies the difference between its two input terminals — the non-inverting (+) and inverting (–) inputs. Op-amps are fundamental building blocks in analog electronics.",
@@ -444,7 +444,7 @@ export const demoProducts = [
     id: 12,
     name: "555 Timer Circuit & Delay Calculator",
     title: "555 Timer Calculator – Monostable & Astable Mode Design Tool",
-    image: "https://images.unsplash.com/photo-1563770660941-20978e870e26?w=800&h=600&fit=crop",
+    image: "/images/555 timer design tool and calculator.png",
     fullDescription: "The 555 Timer is a very popular and versatile timer IC used to generate time delays, square wave oscillations, PWM signals, and pulse generation. It works based on RC (Resistor-Capacitor) charging and discharging. This calculator covers both Monostable (one-shot delay) and Astable (continuous oscillation) modes.",
     theory: {
       whatIs: "The 555 Timer is a very popular and versatile timer IC used to generate time delays, square wave oscillations, PWM signals, pulse generation, and LED flashing circuits. It works based on RC (Resistor-Capacitor) charging and discharging, and operates in two main modes: Monostable (one-shot pulse) and Astable (continuous oscillation).",
